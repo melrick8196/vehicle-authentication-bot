@@ -1,0 +1,15 @@
+#wrapper1 {
+  height: 100vh;
+  background-color: #f2f2f3;
+}
+#wrapper2 {
+  height: 100vh;
+  background-color: #ee4b3e;
+}
+.navbar-custom {
+  background-color: #1fda9a;
+}
+
+.navbar li a {
+  color: #fff;
+}
