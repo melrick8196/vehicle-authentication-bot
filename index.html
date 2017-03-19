@@ -5,31 +5,38 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
 
   <div class="container-fluid">
-    <nav class="navbar navbar-custom" >
+    <nav class="navbar navbar-custom" style="margin-bottom: 0px;" >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
+
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="font-family: 'Cabin Sketch', cursive;font-size:35px; color:#fff;"><strong>VAB</strong></a>
+                <a class="navbar-brand" href="#" style="font-family: 'Cabin Sketch', cursive;font-size:35px; color:#fff;">
+                  <strong>Project Synopsis</strong></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="allProducts.php"><strong>Home</strong></a></li>
-                   </ul>
+
                    <ul class="nav navbar-nav navbar-right">
-  <li><a href="login/index.php"><STRONG>Sign In</STRONG></a></li>
-  <li><a href="signup/index.php"></span><STRONG>Log Out</STRONG></a></li>
+  <li><a href="#motivation"><STRONG>Motivation</STRONG></a></li>
+  <li><a href="#about"></span><STRONG>About</STRONG></a></li>
+  <li><a href="#problem"></span><STRONG>Problem Statement</STRONG></a></li>
+  <li><a href="#design"></span><STRONG>Design</STRONG></a></li>
+
   </ul>
             </div>
         </div>
@@ -45,13 +52,120 @@
         </div>
         <div class="col-md-8">
 
-          <h1>Hello World!</h1>
+          <h1>Vehicle Authentication Bot</h1>
         </div>
         <div class="col-md-2">
         </div>
       </div>
     </div>
-    <div id="wrapper2">
+    <div id="wrapper2" id="motivation">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+
+          <h1>Motivation</h1>
+          <p>A common problem faced by people who travel to colleges is stopping for the security to check if the vehicle really belongs to a person studying at that place and let them through. This is solved by providing stickers to all the vehicles which belongs to the students of that particular place.<p>
+
+            <p>Our college BMSIT doesn't provide stickers to any vehicles. Hence security stops every vehicle in the morning to check for ID card of the person using the vehicle. Students are unhappy about it. Giving a sticker to be put on the vehicle will solve the problem here but more often than not stickers are going to leave a mark behind on the vehicle which is not ideal.</p>
+
+<p>By having the a automated system to do this we can go a step closer in calling BMSIT campus as a 'Smart Campus'. </p>
+
+<p>Work of the security guards at the gate will also be cut off as they will just have to look at the signal given by the device in order to decide if the vehicle has permission to enter the premises or not.</p>
+
+<p>This results in a hassle-free environment near the entrance gates of the campus.<p>
+
+<p>The above mentioned problem is faced at a few apartment entrance as well and not only in colleges.</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="wrapper3" id="about">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+
+          <h1>About</h1>
+          <p>he idea involves a camera module placed near the entrace. This module must have a clear sight of approaching vehicles and also protection rain and other elements. This camera will capture images of approaching vehicles.</p>
+
+<p>Once the image is captured, it is analyzed by image recognition algorithms which will recognise the number plates of the vehicles. These number plates are then matched with the registered numbers in the database and then decides if the vehicle has authorisation to enter the premises or not. The system has a display screen which shows necessary details to the security personnel.</p>
+<p>All the data will be stored in a private network which will be accessed by the Raspberry Pi via a WiFi module. This data contains all the necessary information about the 'authorized' vehicles. The private data stored in the network can be updated through a web browser interface by a device connected to the same private network. A copy of necessary details is stored in the Raspberry Pi as well and is updated once a day by connecting to the private network.</p>
+
+<p>The system will need a external power supply for all the modules to be functional.</p>
+<p>Students will have to register themselves at the start of every academic year in order for their vehicle to be marked as 'authorised'.</p>
+      </p>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+    <div id="wrapper4" id = "problem">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+
+
+          <h1>Problem Statement</h1>
+          <p>To make an efficient device which can recogize number plates of vehicles and authenticate them.</p>
+
+          <h1>Objectives</h1>
+          <p>To make an efficient system which can be used to verify if the vehicle belongs to the premises.</p>
+          <h2>Assumptions</h2>
+          <p>The camera module has a clear sight of the approaching vehicles.</p>
+
+          <p>There is continuous uninterrupted power supply to all the modules being used.</p>
+
+          <p>All the modules are well protected from rain, dust and any other damages/disturbances that may occur.</p>
+
+          <p>All students have registered their vehicle number.<p>
+
+            <p>Speed limit is maintained by all vehicles approaching the gate.</p>
+
+
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+
+    <div id="wrapper5" id="arch">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+
+          <h1>Architecture & Design</h1>
+          <p>A camera module set up in a position which has clear vision of all vehicles that approach the entrance date.</p>
+
+          <p>A display module set up in a convenient position for security personnel to view if the vehicle is 'authorized' to enter the premises.<p>
+
+            <p>A web interface for the purpose of updating the database. </p>
+            <br>
+            <h1>Hardware Requirements</h1>
+            <p>Raspberry PI 3B - to store data and analyze the data. ( &#8377;  2899)</p>
+
+            <p>PiCamera - camera module for capturing images of vehicles for further analysis. ( &#8377;1300)</p>
+
+            <p>7" Touchscreen LCD Display  - for displaying if the vehicle is 'authorized' to enter the premises. ( &#8377;7999)</p>
+
+            <p>Cables(HDMI,USB) and Adapter - for giving power supply to the modules and display purposes. ( &#8377;1000 approx)</p>
+
+            <p>Total expenses : &#8377; 13,000 to  &#8377; 14,000</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--  <div id="wrapper7">
       <div class="row">
         <div class="col-md-2">
         </div>
@@ -62,7 +176,9 @@
         <div class="col-md-2">
         </div>
       </div>
-    </div>
+    </div>   -->
+
+
   </div>
 
 </body>
