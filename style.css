@@ -72,3 +72,11 @@ body{
 .navbar li a {
   color: #fff;
 }
+
+.navbar-brand {
+  font-size: 25px !important;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
