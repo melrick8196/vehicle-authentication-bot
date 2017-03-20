@@ -13,10 +13,11 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <script type="text/javascript">
     $(document).ready(function(){
       $('a[href^="#"]').click(function(){
-            
+
                 var target=$(this).attr('href');
                 $('html, body').animate({
                     scrollTop:$(target).offset().top - 70
@@ -39,12 +40,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="font-family: 'Cabin Sketch', cursive;font-size:35px; color:#fff;">
+                <a class="navbar-brand" href="#" style="font-family: 'Roboto Mono', monospace;font-size:35px; color:#fff;">
                   Project Synopsis</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 
-                   <ul class="nav navbar-nav navbar-right">
+                   <ul class="nav navbar-nav navbar-right" style="font-family: 'Roboto Mono', monospace">
                     <li><a href="#motivation"><STRONG>Motivation</STRONG></a></li>
                     <li><a href="#about"></span><STRONG>About</STRONG></a></li>
                     <li><a href="#problem"></span><STRONG>Problem Statement</STRONG></a></li>
@@ -67,7 +68,7 @@
         <div class="col-md-8">
 
           <h1><span class="glyphicon glyphicon-camera"></span> Vehicle Authentication Bot</h1>
-          <img src="police.png" style="text-align: center;">
+          <img src="police.png" style="text-align: center;" id="image">
         </div>
         <div class="col-md-2">
         </div>
@@ -238,7 +239,7 @@
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
       </div>
 
-    </div>  
+    </div>
 
 
   <!--  <div id="wrapper7">

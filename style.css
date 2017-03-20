@@ -89,3 +89,7 @@ div {
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+
+#image {
+  width: 255px;
+}
