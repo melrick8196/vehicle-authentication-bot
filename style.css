@@ -75,6 +75,12 @@ div {
 .navbar li a {
   color: #fff;
 }
+.navbar li a:hover{
+  color: #000000 !important;
+}
+.navbar li a:focus{
+  color: #000000 !important;
+}
 
 .navbar-brand {
   font-size: 25px !important;

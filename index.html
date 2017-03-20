@@ -13,11 +13,24 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('a[href^="#"]').click(function(){
+            
+                var target=$(this).attr('href');
+                $('html, body').animate({
+                    scrollTop:$(target).offset().top - 70
+                },1000);
+                return false;
+        });
+    });
+
+  </script>
 </head>
 <body>
 
   <div class="container-fluid">
-    <nav class="navbar navbar-custom" style="margin-bottom: 0px;" >
+    <nav class="navbar navbar-custom navbar-fixed-top" style="margin-bottom: 0px;" >
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,12 +45,13 @@
             <div id="navbar" class="navbar-collapse collapse">
 
                    <ul class="nav navbar-nav navbar-right">
-  <li><a href="#motivation"><STRONG>Motivation</STRONG></a></li>
-  <li><a href="#about"></span><STRONG>About</STRONG></a></li>
-  <li><a href="#problem"></span><STRONG>Problem Statement</STRONG></a></li>
-  <li><a href="#design"></span><STRONG>Design</STRONG></a></li>
+                    <li><a href="#motivation"><STRONG>Motivation</STRONG></a></li>
+                    <li><a href="#about"></span><STRONG>About</STRONG></a></li>
+                    <li><a href="#problem"></span><STRONG>Problem Statement</STRONG></a></li>
+                    <li><a href="#arch"></span><STRONG>Design</STRONG></a></li>
+                    <li><a href="#timeline"></span><STRONG>Timeline</STRONG></a></li>
 
-  </ul>
+                    </ul>
             </div>
         </div>
     </nav>
@@ -53,6 +67,7 @@
         <div class="col-md-8">
 
           <h1><span class="glyphicon glyphicon-camera"></span> Vehicle Authentication Bot</h1>
+          <img src="police.png" style="text-align: center;">
         </div>
         <div class="col-md-2">
         </div>
@@ -142,26 +157,13 @@
         <div class="col-md-8">
 
           <h2 id="arch"><span class="glyphicon glyphicon-home"></span> Architecture & Design</h2>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-star"></span>  
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
-          <span class="glyphicon glyphicon-minus"></span>
           <p>A camera module set up in a position which has clear vision of all vehicles that approach the entrance date.</p>
 
             <p>A display module set up in a convenient position for security personnel to view if the vehicle is 'authorized' to enter the premises.<p>
 
             <p>A web interface for the purpose of updating the database. </p>
             <br>
-            <h2><span class="glyphicon glyphicon-wrench"></span>Hardware Requirements</h2>
+            <h2><span class="glyphicon glyphicon-wrench"></span> Hardware Requirements</h2>
             <p>Raspberry PI 3B - to store data and analyze the data. ( &#8377;  2899)</p>
 
             <p>PiCamera - camera module for capturing images of vehicles for further analysis. ( &#8377;2399)</p>
@@ -177,6 +179,67 @@
       </div>
     </div>
 
+
+
+    <div id="wrapper6">
+      <div class="row" style="text-align: center;"><h1 id="timeline">Timeline</h1></div>
+
+
+      <div class="row">
+        <div class="col-md-6" style="border-right:3px solid #000000; height: 100px;">
+        </div>
+        <div class="col-md-6" style="border-left:3px solid #000000; height: 100px;">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center;">
+        <h3>March 2017</h3>
+        <div style="text-align: left; padding: 0px 20% 0px 20%">
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>          
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6" style="border-right:3px solid #000000; height: 100px;">
+        </div>
+        <div class="col-md-6" style="border-left:3px solid #000000; height: 100px;">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center;">
+        <h3>April 2017</h3>
+        <div style="text-align: left; padding: 0px 20% 0px 20%">
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>          
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6" style="border-right:3px solid #000000; height: 100px;">
+        </div>
+        <div class="col-md-6" style="border-left:3px solid #000000; height: 100px;">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center;">
+        <h3>May 2017</h3>
+        <div style="text-align: left; padding: 0px 20% 0px 20%">
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>
+          <p><span class="glyphicon glyphicon-record"></span></p>          
+        </div>
+      </div>
+
+
+    </div>  
 
 
   <!--  <div id="wrapper7">
