@@ -93,3 +93,7 @@ div {
 #image {
   width: 255px;
 }
+
+.row {
+  margin: 0px !important;
+}
